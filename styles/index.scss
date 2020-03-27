@@ -1,0 +1,15 @@
+html,
+body,
+iframe {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: block;
+  background: white;
+  color: black;
+}
+
+#main {
+  min-height: 600px;
+  min-width: 400px;
+}

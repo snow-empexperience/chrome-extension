@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension for ServiceNow",
+  "description": "ServiceNow Chrome Extension to quickly report issues and search Knowledge Base",
+  "version": "1",
+  "author": "Intellective",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/now-icon.png",
+    "default_title": "Now"
+  },
+  "background": {
+    "scripts": [
+      "scripts/jquery.min.js",
+      "scripts/moment.min.js",
+      "scripts/servicenow.js",
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "https://*.service-now.com/*"
+  ],
+  "web_accessible_resources": ["index.html"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:4200/*",
+        "https://app.getpostman.com/oauth2/callback*"
+      ],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <style>
+    html,
+    body,
+    iframe {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      display: block;
+      text-align: center;
+      font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    body{
+      min-height: 600px;
+      min-width: 400px;
+      background-color: #293e40;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      background-position: center center;
+    }
+
+    #logo{
+      padding: 20vh 0 20px 0;
+      text-align: center;
+    }
+
+    #logo img{
+      height: 24px;
+    }
+
+    #login{
+      margin: 20px 0;
+      padding: 12px 10px;
+      font-size: 16px;
+      width: 80%;
+      background-color: transparent;
+      border: 2px solid #609f87;
+      color: white;
+      cursor: pointer;
+    }
+
+    #login:hover{
+      border-color:#81b5a1;
+    }
+
+    .error-message {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      background: #f95050;
+      color: white;
+      display: none;
+    }
+  </style>
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/moment.min.js"></script>
+  <script type="text/javascript" src="scripts/servicenow.js"></script>
+  <script type="text/javascript" src="scripts/login.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/options.css" />
+</head>
+
+<body id="main">
+  <div id="logo">
+    <label for="environment">Environment</label>
+    <input type="text" name="environment" id="environment" placeholder="example"/><span>.service-now.com</span>
+  </div>
+
+  <button id="login">Click here to login</button>
+  <div class="error-message">Please enter environment</div>
+</body>
+
+</html>
