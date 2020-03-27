@@ -1,0 +1,27 @@
+#main {
+  min-height: 600px;
+  min-width: 400px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+iframe,
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sp-page-loader .img {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.sp-page-loader .img img {
+  height: 60px;
+}
+
+.sp-page-loader {
+  font-size: 12px;
+}

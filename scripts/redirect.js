@@ -1,0 +1,1 @@
+top.location.href = "https://surfsedev.service-now.com/extension";
